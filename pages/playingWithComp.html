@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Londrina+Sketch&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/playingWithComp.css" />
+    <link rel="stylesheet" href="../styles/connections.css" />
+    <title>Playing With Computer</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__wrapper">
+        <div
+          class="header__top d-flex justify-content-between align-items-center"
+        >
+          <div class="header__top-time">
+            <span class="hours">9</span> <span class="align-middle">:</span>
+            <span class="minutes">41</span>
+          </div>
+          <div class="header__top-connections d-flex align-items-center gap-1">
+            <div class="header__top-internet-connection d-flex">
+              <div class="connection line mt-auto line1"></div>
+              <div class="connection line mt-auto line2"></div>
+              <div class="connection line mt-auto line3"></div>
+              <div class="connection line mt-auto line4"></div>
+            </div>
+            <div
+              class="header__top-wifi-wrapper position-relative w-100 h-100 z-3 ms-2"
+            >
+              <div class="header__top-wifi">
+                <i class="bi bi-wifi"></i>
+              </div>
+              <div class="through-wifi"></div>
+            </div>
+            <div class="battery__wrapper">
+              <div class="battery__content position-relative">
+                <span class="battery__percentage align-middle m-auto">100</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__body-playing position-relative">
+          <div class="header__body-links position-absolute top-0 start-0">
+            <div class="header__body-link back-icon">
+              <i class="bi bi-x"></i>
+            </div>
+            <div class="header__body-link2 pause-icon">
+              <i class="bi bi-pause"></i>
+              <!-- <i class="bi bi-caret-right"></i> -->
+            </div>
+          </div>
+          <div class="header__body-content">
+            <div class="header__body-content-top">
+              <h5 class="header__body-title">You - X</h5>
+              <h5 class="header__body-title">Computer - O</h5>
+            </div>
+            <div
+              class="header__body-content-body d-flex justify-content-between align-items-center flex-column"
+            >
+              <div
+                class="header__body-content-body-img-wrapper d-flex justify-content-between"
+              >
+                <img
+                  src="../images/Illustrationsleft.svg"
+                  class="header__body-content-body-img header__body-content-body-img1"
+                  alt="img"
+                />
+                <img
+                  src="../images/Illustrationsright.svg"
+                  class="header__body-content-body-img header__body-content-body-img2"
+                  alt="img"
+                />
+              </div>
+              <div class="tic-tac-toe-wrapper">
+                <div class="tic-tac-toe">
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/O.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/X.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/O.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/X.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/O.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/X.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/O.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/X.svg" alt="Img" />
+                  </div>
+                  <div class="tic-tac-toe-item">
+                    <img src="../images/O.svg" alt="Img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="header__footer-playing d-flex justify-content-center align-items-center"
+        >
+          <div
+            class="header__footer-wrapper d-flex justify-content-center align-items-center flex-column"
+          >
+            <img class="header__footer-img" src="../images/O.svg" alt="img" />
+            <p class="header__footer-text">Your Turn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pause-modal d-none">
+      <div class="pause-modal__wrapper">
+        <div class="pause-modal__content">
+          <img src="../images/Game Paused.svg" alt="img" />
+          <div
+            class="pause-modal__content-btns mt-3 d-flex justify-content-center align-items-center gap-3"
+          >
+            <div class="pause-modal__content-btn">
+              <button class="custom-btn-resume resume-btn" type="button">
+                <i class="bi bi-caret-right"></i>
+              </button>
+            </div>
+            <div class="pause-modal__content-btn">
+              <button class="custom-btn-exit back-btn" type="button">
+                <i class="bi bi-x"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-pause d-none"></div>
+  </body>
+  <script src="../index.js"></script>
+  <script src="../js/timer.js"></script>
+  <script src="../js/connections.js"></script>
+  <script src="../js/playingWithAi.js"></script>
+</html>

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.dot-font {
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__wrapper {
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 390px;
+  padding: 10px;
+}
+
+.header__body {
+  height: 55%;
+}
+
+.header__body-link,
+.header__body-link2 {
+  padding: 3px;
+  background-color: #0c0c0c;
+  box-shadow: -3px 3px 0px 0px #0c0c0c;
+}
+
+.header__body-link::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 35%;
+  transform: translate(3px, 3px);
+  border: 2px solid #fff;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.header__body-link2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 35%;
+  border: 2px solid #fff;
+  transform: translate(3px, -3px);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.header__body-link:first-child {
+  margin-bottom: 20px;
+}
+
+.header__body-link i,
+.header__body-link2 i {
+  font-size: 20px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.header__body-first-img {
+  margin-top: 20px;
+}
+
+.header__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.header__footer-title {
+  margin: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.custom-btn {
+  padding: 12px 0;
+  width: 330px;
+  background-color: #0c0c0c;
+  border: none !important;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  box-shadow: -10px 10px 0px 0px #0c0c0c;
+  outline: none;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.custom-btn::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 103%;
+  height: 120%;
+  transform: translate(-10px, -11px);
+  border: 2px solid #0c0c0c;
+  margin: 5px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 112%;
+  transform: translate(-4px, -4px);
+  border: 4px solid #fff;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.custom-btn:first-child {
+  margin-bottom: 24px;
+}
+
+.btn:hover {
+  background-color: #0c0c0c;
+  color: #fff;
+}

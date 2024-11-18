@@ -147,7 +147,7 @@ function isBoardFull() {
 
 function checkWin(player) {
   const board = Array.from(ticTacToe.children).map((cell) =>
-    cell.getAttribute("data-used")
+    cell.getAttribute("data-used") 
   );
 
   const winningCombinations = [

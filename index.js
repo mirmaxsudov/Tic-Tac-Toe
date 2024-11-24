@@ -2,21 +2,6 @@ function showSinglePlayer() {
   window.location.href = "../pages/playingWithComp.html";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  navigator.getBattery().then(function (battery) {
-    function updateBatteryStatus() {
-      const batteryLevel = (battery.level * 100).toFixed(0); // Battery level in percentage
-      console.log(`Battery Level: ${batteryLevel}%`);
-      // You can also display this value on the webpage
-    }
-
-    // Initial battery level
-    updateBatteryStatus();
-
-    //   battery.addEventListener("levelchange", updateBatteryStatus);
-  });
-});
-
 async function checkOnlineStatus() {
   try {
     const response = await fetch("https://picsum.photos/10", {
@@ -54,12 +39,6 @@ if ("connection" in navigator) {
   console.log("Network Information API is not supported on this browser.");
 }
 
-// if (navigator.onLine) {
-//   console.log("You are online.");
-// } else {
-//   console.log("You are offline.");
-// }
-
-// // Listen for changes in online/offline status
-// window.addEventListener("online", () => console.log("You are online."));
-// window.addEventListener("offline", () => console.log("You are offline."));
+function showPlayWithFriend() {
+  window.location.href = "../pages/playingWithFriend.html";
+}
